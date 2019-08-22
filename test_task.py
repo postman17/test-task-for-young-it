@@ -49,8 +49,3 @@ class AmoCrmApi:
         url = URL_INCOMING_LEADS.format(self.login)
         response = self._send_get_request(url, params, cookies)
         return response.json()
-
-
-# asdf = AmoCrmApi('fordevelop17', 'fordevelop17@yandex.ru', '58508126b0dd6a07f3537d3de1e74207c288e317')
-# print(asdf.account())
-# print(asdf.incoming_leads(10, 1, []))
